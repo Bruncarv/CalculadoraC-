@@ -1,25 +1,25 @@
-/* Atividade Pr·tica II
+/* Atividade Pr√°tica II
 
-Desenvolver um programa que preencha um vetor de 10 posiÁıes com n˙meros (positivos ou negativos) informados pelo usu·rio (utilize um loop para requisitar os valores aos estudantes)
+Desenvolver um programa que preencha um vetor de 10 posi√ß√µes com n√∫meros (positivos ou negativos) informados pelo usu√°rio (utilize um loop para requisitar os valores aos estudantes)
 
-ApÛs isso, utilizando um loop, efetue a soma, subtraÁ„o, multiplicaÁ„o e divis„o destes 10 n˙meros (Ìndices do array).
+Ap√≥s isso, utilizando um loop, efetue a soma, subtra√ß√£o, multiplica√ß√£o e divis√£o destes 10 n√∫meros (√≠ndices do array).
 
-OBS: n„o ser„o aceitos exercÌcios em que a soma È feita sem a utilizaÁ„o do loop.
+OBS: n√£o ser√£o aceitos exerc√≠cios em que a soma √© feita sem a utiliza√ß√£o do loop.
 
-Exemplo de exercÌcio n„o aceito:
+Exemplo de exerc√≠cio n√£o aceito:
 
 soma = vet[0]+vet[1]+vet[2]+vet[3]+vet[4];
 
  
 
-ApÛs a soma e a multiplicaÁ„o serem feitas, duas mensagens dever„o ser emitidas:
+Ap√≥s a soma e a multiplica√ß√£o serem feitas, duas mensagens dever√£o ser emitidas:
 
-    Deve-se informar o valor da soma e informar se a soma È positiva ou negativa.
-    Deve-se informar o valor da subtraÁ„o e informar se a soma È positiva ou negativa.
-    Deve-se informar o valor da multiplicaÁ„o e informar se a mesma È positiva ou negativa
-    Deve-se informar o valor da divis„o e informar se a mesma È positiva ou negativa
-    Ao final do programa, verificar se o usu·rio deseja continuar e inserir novos valores. A mensagem ìDeseja preencher um novo vetor?î e o usu·rio informar· a opÁ„o ìS ou sî, caso queira continuar. Qualquer outra opÁ„o, o programa dever· ser finalizado.
-    O desenvolvedor dever· criar um procedimento para informar se o n˙mero È positivo ou negativo.
+    Deve-se informar o valor da soma e informar se a soma √© positiva ou negativa.
+    Deve-se informar o valor da subtra√ß√£o e informar se a soma √© positiva ou negativa.
+    Deve-se informar o valor da multiplica√ß√£o e informar se a mesma √© positiva ou negativa
+    Deve-se informar o valor da divis√£o e informar se a mesma √© positiva ou negativa
+    Ao final do programa, verificar se o usu√°rio deseja continuar e inserir novos valores. A mensagem ‚ÄúDeseja preencher um novo vetor?‚Äù e o usu√°rio informar√° a op√ß√£o ‚ÄúS ou s‚Äù, caso queira continuar. Qualquer outra op√ß√£o, o programa dever√° ser finalizado.
+    O desenvolvedor dever√° criar um procedimento para informar se o n√∫mero √© positivo ou negativo.
 
 */
 #include<stdio.h>
@@ -30,7 +30,7 @@ using namespace std;
 int main(){
 	char refas;
 	do{
-	setlocale(LC_ALL,"Portuguese"); //DefiniÁ„o de idioma
+	setlocale(LC_ALL,"Portuguese"); //Defini√ß√£o de idioma
 	float vetor, soma, sub, mult=1, div=1;
 	int rep;
 		for (rep=0;rep<10;rep++)
@@ -48,17 +48,17 @@ int main(){
 		system("pause");
 		system("cls");
 		printf("\nSoma..................................... %2.f \n\n",soma);
-		if(soma>=0){printf("Soma È positivo \n\n");}else{printf("Soma È negativo \n\n");}
-		printf("\nSubtraÁ„o................................ %2.f \n\n",sub);
-		if(sub>=0){printf("SubtraÁ„o È positivo \n\n");}else{printf("SubtraÁ„o È negativo \n\n");}
- 		printf("\nMultiplicaÁ„o............................ %2.f \n\n",mult);
- 		if(mult>=0){printf("MultiplicaÁ„o È positivo\n\n");}else{printf("MultiplicaÁ„o È negativo \n\n");}
-		printf("\nDiviÁ„o.................................. %2.f \n\n",div);
-		if(div>=0){printf("DiviÁ„o È positivo\n\n");}else{printf("DiviÁ„o È negativo \n\n");}
+		if(soma>=0){printf("Soma √© positivo \n\n");}else{printf("Soma √© negativo \n\n");}
+		printf("\nSubtra√ß√£o................................ %2.f \n\n",sub);
+		if(sub>=0){printf("Subtra√ß√£o √© positivo \n\n");}else{printf("Subtra√ß√£o √© negativo \n\n");}
+ 		printf("\nMultiplica√ß√£o............................ %2.f \n\n",mult);
+ 		if(mult>=0){printf("Multiplica√ß√£o √© positivo\n\n");}else{printf("Multiplica√ß√£o √© negativo \n\n");}
+		printf("\nDivi√ß√£o.................................. %2.f \n\n",div);
+		if(div>=0){printf("Divi√ß√£o √© positivo\n\n");}else{printf("Divi√ß√£o √© negativo \n\n");}
 		system("time/t");
 		system("date/t");
 		printf("\n\n\n\n\n Deseja Repetir(S/N)....................");
 		scanf("%s",&refas);
 		system("cls");
 	}while(refas=='S'||refas=='s');
-} /* Desenvolvedor Bruno Carvlho */
+} /* Desenvolvedor Bruno Carvalho */
